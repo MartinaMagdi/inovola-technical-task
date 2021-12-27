@@ -29,5 +29,6 @@ export default {
 <style lang="scss">
 html{
   direction: rtl;
+  scroll-behavior: smooth;
 }
 </style>

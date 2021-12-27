@@ -26,19 +26,28 @@
       </ul>
     </div>
     <div class="buttons-container">
-      <v-icon class="message-icon">mdi-forum</v-icon>
-      <v-icon class="arrow-icon">mdi-arrow-up</v-icon>
+      <button>
+        <v-icon class="message-icon">mdi-forum</v-icon>
+      </button>
+      <button @click="scrollToTop()">
+        <v-icon class="arrow-icon">mdi-arrow-up</v-icon>
+      </button>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Footer',
+export default {
+  name: "Footer",
 
-    data: () => ({
-    }),
-  }
+  data: () => ({}),
+
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
